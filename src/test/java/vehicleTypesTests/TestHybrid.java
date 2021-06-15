@@ -3,13 +3,13 @@ package vehicleTypesTests;
 import org.junit.Before;
 import org.junit.Test;
 import vehicles.carParts.*;
-import vehicles.types.Petrol;
+import vehicles.types.Hybrid;
 
 import static org.junit.Assert.assertEquals;
 
 public class TestHybrid {
 
-    Petrol hybridCar;
+    Hybrid hybridCar;
     Tyres slimTyres;
     Gearbox autoGearbox;
     Engine hybridEngine;
@@ -19,7 +19,7 @@ public class TestHybrid {
         slimTyres = new Tyres(TyreType.REGULAR);
         hybridEngine = new Engine(1800, EngineType.PETROL);
         autoGearbox = new Gearbox(GearboxType.MANUAL);
-        hybridCar = new Petrol(10000, "Silver", hybridEngine, slimTyres, autoGearbox);
+        hybridCar = new Hybrid(10000, "Silver", hybridEngine, slimTyres, autoGearbox);
     }
 
     @Test

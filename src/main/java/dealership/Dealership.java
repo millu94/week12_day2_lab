@@ -15,8 +15,8 @@ public class Dealership{
         this.till = till;
     }
 
-    public ArrayList<Vehicle> getStock() {
-        return stock;
+    public int getStock() {
+        return stock.size();
     }
 
     public int getTill() {

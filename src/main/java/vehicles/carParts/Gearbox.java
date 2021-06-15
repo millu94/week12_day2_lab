@@ -7,4 +7,8 @@ public class Gearbox {
     public Gearbox(GearboxType gearboxType){
         this.gearboxType = gearboxType;
     }
+
+    public GearboxType getGearboxType() {
+        return gearboxType;
+    }
 }

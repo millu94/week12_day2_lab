@@ -7,4 +7,8 @@ public class Tyres {
     public Tyres(TyreType tyreType) {
         this.tyreType = tyreType;
     }
+
+    public TyreType getTyreType() {
+        return tyreType;
+    }
 }

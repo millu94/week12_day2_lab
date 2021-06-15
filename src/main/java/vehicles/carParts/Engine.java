@@ -10,5 +10,11 @@ public class Engine {
         this.engineType = engineType;
     }
 
+    public int getCcLevel() {
+        return ccLevel;
+    }
 
+    public EngineType getEngineType() {
+        return engineType;
+    }
 }

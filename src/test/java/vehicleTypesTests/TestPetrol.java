@@ -15,7 +15,7 @@ public class TestPetrol {
     Engine petrolEngine;
 
     @Before
-    public void before(){
+    public void before() {
         regTyres = new Tyres(TyreType.REGULAR);
         petrolEngine = new Engine(2000, EngineType.PETROL);
         manualGearbox = new Gearbox(GearboxType.MANUAL);

@@ -1,10 +1,11 @@
 package dealership;
 
 import vehicles.Vehicle;
+import customer.Customer;
 
 import java.util.ArrayList;
 
-public class Dealership {
+public class Dealership{
 
     private ArrayList<Vehicle> stock;
     private int till;
@@ -22,7 +23,13 @@ public class Dealership {
         return till;
     }
 
-    public void addToStock(Vehicle vehicle){
+    public void addCar(Vehicle vehicle) {
         this.stock.add(vehicle);
+    }
+
+    public void sellCar(Vehicle vehicle) {
+        this.stock.remove(vehicle);
+        customer.buyCar(vehicle);
+
     }
 }
